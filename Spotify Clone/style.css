@@ -1,0 +1,220 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem; /*16px*/
+    margin-top: 0.5rem;
+}
+.main_content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.music_player {
+    background-color: #121212;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav_option {
+    line-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.nav_option i {
+    font-size: 1.25rem;
+}
+.nav_option a {
+    font-size: 1rem;
+    margin: 1rem;
+}
+.nav_option .search {
+    opacity: 0.5;
+}
+.nav_option .search:hover {
+    opacity: 1;
+}
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    height: 100%;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib_options img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.box {
+    background-color: #232323;
+    border-radius: 1rem;
+    height: 8rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+.box .para1 {
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+.box .para2 {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+button {
+    background-color: white;
+    margin-left: 1rem;
+    padding: 0.25rem, 1rem;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    height: 2rem;
+    width: 8rem;
+}
+.box {
+    margin-top: 1.75rem;
+}
+.box button:hover {
+    height: 2.2rem;
+    width: 8.2rem;
+}
+.sticky_nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem 1rem 0rem;
+    z-index: 10;
+}
+.sticky_nav .arrows {
+    margin-left: 0.5rem;
+}
+.sticky_nav .sticky_btn {
+    margin-right: 0.5rem;
+}
+.install {
+    background-color: black;
+    color: white;
+}
+@media (max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+h3 {
+    margin-left: 0.5rem;
+}
+.card {
+    background-color: #232323;
+    margin-left: 1rem;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.cards_container {
+    display: flex;
+}
+.card img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card_title {
+    font-weight: 600;
+}
+.card_info {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.song {
+    display: flex;
+    width: 25%;
+}
+.song img {
+    margin-left: 0.5rem;
+    height: 4rem;
+    width: 4rem;
+}
+.song h5 {
+    align-self: center;
+    margin-left: 0.5rem;
+    margin-top: -0rem;
+}
+.song p {
+    font-size: small;
+    align-self: center;
+    margin-left: -4.6rem;
+    margin-bottom: -0.7rem;
+}
+.funtions {
+    display: flex;
+    width: 25%;
+}
+.funtions input {
+    align-self: center;
+    margin-left: 60rem;
+}
+.player {
+    width: 50%;
+}
+.player_control-icon {
+    margin-top: 0.5rem;
+    height: 1rem;
+    padding: 0.5rem;
+}
+.playback_bar .curr_time {
+    margin-left: -1rem;
+}
+.icons {
+    display: flex;
+    margin-right: 1rem;
+    justify-content: space-between;
+}
+.plus {
+    margin-top: 0.2rem;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+.arrow {
+    height: 1.5rem;
+    width: 1.5rem;
+}
